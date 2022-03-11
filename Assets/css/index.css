@@ -55,7 +55,7 @@ main {
 }
 
 .navbar {
-    width: 30%;
+    width: 40%;
     display: flex;
 }
 
@@ -80,6 +80,11 @@ main {
     width: 80%;
     color: #ffffff;
     padding: 1% 30% 0 0;
+}
+
+a:hover,
+i:hover {
+    color: var(--primary-gray);
 }
 
 
@@ -332,4 +337,8 @@ img {
 
 i {
     color: var(---color-white);
+}
+
+.main-footer>.subscription>a:hover {
+    text-decoration: underline !important;
 }

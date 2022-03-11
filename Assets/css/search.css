@@ -90,121 +90,8 @@ i:hover {
 
 /*main*/
 
-.border {
-    border-bottom: 10px solid var(--gray-footer-btn);
-}
-
-.sunny {
-    margin: 4% 0 0 5%;
-    background-color: var(---color-white);
-    box-shadow: 10px 24% 20px 14px;
-}
-
-.titre {
-    padding: 0;
-    text-transform: uppercase;
-    text-align: center;
-    color: var(--primary-color);
-}
-
-.titre .fa-gear {
-    padding: 0 2%;
-    color: var(--primary-color);
-}
-
-.flex {
+.form {
     display: flex;
-    justify-content: space-between;
-}
-
-.tableaux {
-    width: 60%;
-}
-
-.tableau {
-    width: 40%;
-}
-
-.city {
-    padding: 0.1% 10%;
-    margin: 3%;
-    width: 50%;
-    font-weight: normal;
-    font-size: 20px;
-    text-align: center;
-    text-transform: capitalize;
-}
-
-.button {
-    align-items: flex-end;
-    text-align: center;
-    padding: 2% 0;
-    margin: 0 0 0 83%;
-    width: 10%;
-    border: none;
-    color: var(---color-white);
-    text-transform: uppercase;
-    background-color: var(--primary-blue);
-}
-
-.require {
-    padding-top: 2%;
-    display: flex;
-}
-
-.car {
-    padding: 2% 0;
-    display: flex;
-    width: 30%;
-}
-
-.icon-car .fa-solid {
-    margin: 0 0 0 2%;
-    font-size: 17px;
-    color: var(--primary-blue);
-}
-
-.text-car {
-    padding: 0 0 0 6%;
-    text-transform: capitalize;
-}
-
-.bible {
-    margin: 3% 0 0 3%;
-    padding: 2% 0;
-    background-color: rgb(248, 245, 245);
-}
-
-.icon-bible .fa-solid {
-    margin: 0 0 0 2%;
-    font-size: 17px;
-    color: var(--gray-footer-btn);
-}
-
-.text-bible {
-    padding: 0 0 0 1%;
-    text-transform: uppercase;
-}
-
-.direction {
-    text-align: center;
-}
-
-.icon-little .fa-solid {
-    margin: 0 0 0 2%;
-    font-size: 17px;
-    color: var(--primary-color);
-}
-
-.text-little {
-    color: var(--primary-color);
-    text-align: center;
-    padding: 0 0 0 1%;
-    text-transform: uppercase;
-}
-
-.mapouter {
-    margin: 3%;
 }
 
 
@@ -319,18 +206,18 @@ i:hover {
     color: var(--primary-color);
 }
 
-.links {
-    padding-left: 2%;
-    color: var(---color-white);
-    text-decoration: none;
-}
-
 .sub-footer {
     padding: 0 0 0 5%;
     color: var(---color-white);
     justify-content: space-between;
     display: flex;
     background-color: var(--gray-footer);
+}
+
+.links {
+    padding-left: 2%;
+    color: var(---color-white);
+    text-decoration: none;
 }
 
 .social-icon {
@@ -340,4 +227,8 @@ i:hover {
 
 i {
     color: var(---color-white);
+}
+
+.main-footer>.subscription>a:hover {
+    text-decoration: underline !important;
 }
