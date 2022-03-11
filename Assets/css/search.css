@@ -90,8 +90,79 @@ i:hover {
 
 /*main*/
 
-.form {
+.first {
+    margin: 4% 0 0 0;
+    padding: 2% 0 0 0;
+    background-color: rgb(235, 230, 230);
+}
+
+.center {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    color: var(--primary-gray);
+}
+
+.forms {
     display: flex;
+    padding: 2% 0 0 10%;
+}
+
+.form {
+    padding: 2% 0;
+    width: 10%;
+}
+
+#location {
+    width: 60%;
+    margin-top: 6%;
+    padding: 5%;
+    border-radius: 4px;
+    border: none;
+}
+
+#host {
+    width: 60%;
+    padding: 5%;
+    margin-top: 6%;
+    border-radius: 4px;
+    border: none;
+}
+
+#subject {
+    width: 60%;
+    padding: 5%;
+    margin-top: 6%;
+    border-radius: 4px;
+    border: none;
+}
+
+#iniatialdate {
+    width: 95%;
+    padding: 3%;
+    margin-top: 6%;
+    border-radius: 4px;
+    border: none;
+}
+
+#finaldate {
+    width: 95%;
+    padding: 3%;
+    margin-top: 6%;
+    border-radius: 4px;
+    border: none;
+}
+
+#daytime {
+    width: 120%;
+    padding: 4%;
+    margin-top: 6%;
+    border-radius: 4px;
+    border: none;
+}
+
+.forme {
+    margin-left: 80px;
 }
 
 

@@ -40,39 +40,46 @@
     </header>
     <!----------------main------------------>
     <main>
-        <section>
-            <div>
-                <h2>Filteer by loction,host subject,date,anytime:</h2>
+        <section class="first">
+            <div class="center">
+                <h2>Filteer by location,host subject,date,anytime:</h2>
             </div>
-            <div class="form">
-                <form action="/action_page.php">
+            <div class="forms">
+                <form class="form" action="/action_page.php">
                     <label for="location">Location</label><br>
                     <input type="text" id="location" name="location" value="">
                 </form>
-                <form action="/action_page.php">
+                <form class="form" action="/action_page.php">
                     <label for="host">Host</label><br>
                     <input type="text" id="host" name="host" value="">
                 </form>
-                <form action="/action_page.php">
+                <form class="form" action="/action_page.php">
                     <label for="location">Subject</label><br>
                     <input type="text" id="subject" name="subject" value="">
                 </form>
-                <form action="/action_page.php">
-                    <label for="iniatialdate">Initial date</label>
+                <form class="form" action="/action_page.php">
+                    <label for="iniatialdate">Initial date</label><br>
                     <input type="date" id="iniatialdate" name="iniatialdate">
                 </form>
-                <form action="/action_page.php">
-                    <label for="finaldate">Final date</label>
+                <form class="form" action="/action_page.php">
+                    <label for="finaldate">Final date</label><br>
                     <input type="date" id="finaldate" name="finaldate" placeholder="21/06/2021">
                 </form>
-                <form action="/action_page.php">
-                    <label for="daytime">Daytime</label>
+                <form class="form" action="/action_page.php">
+                    <label for="daytime">Daytime</label> <br>
                     <select id="daytime" name="daytime">
                       <option value="#"></option>
                       <option value="#"></option>
                       <option value="choose" selected>choose...</option>
                     </select>
                 </form>
+                <div class="forme">
+                    <button>search</button>
+                    <button type="button" class="button">
+                        <span class="button-icon"><i class="fa-solid fa-pen-to-square"></i></span> 
+                        <span class="button-text">Clear filter</span>
+                    </button>
+                </div>
             </div>
         </section>
 
