@@ -41,6 +41,10 @@ main {
     font-size: 30px;
 }
 
+.text-header {
+    margin-left: 60%;
+}
+
 .logo {
     display: flex;
 }
@@ -51,11 +55,11 @@ main {
 }
 
 .navs {
-    width: 50%;
+    width: 60%;
 }
 
 .navbar {
-    width: 40%;
+    width: 50%;
     display: flex;
 }
 
@@ -79,7 +83,8 @@ main {
 .nav-link>i {
     width: 80%;
     color: #ffffff;
-    padding: 1% 30% 0 0;
+    margin: 0 0 0 2%;
+    padding: 1% 0 0 0;
 }
 
 a:hover,
@@ -87,21 +92,49 @@ i:hover {
     color: var(--primary-gray);
 }
 
+@media screen and (max-width:570px) {
+    header {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .nave {
+        display: flex;
+    }
+    .text-header {
+        display: none;
+    }
+    .event {
+        font-size: 30px;
+        padding: 20% 0 0 0;
+    }
+    .nav-item {
+        padding: 2% 19% 0 2%;
+    }
+    .nave>img {
+        padding: 15% 0 0 50%;
+        width: 35%;
+    }
+}
+
 
 /*main*/
 
+
+/*first section*/
+
 .border {
-    border-bottom: 10px solid var(--gray-footer-btn);
+    border-bottom: 9px solid var(--primary-gray);
 }
 
 .sunny {
-    margin: 4% 0 0 5%;
+    margin: 4% 0 0 3%;
     background-color: var(---color-white);
-    box-shadow: 10px 24% 20px 14px;
+    box-shadow: 0px 0px 1px 0px var(--dark-footer);
 }
 
 .titre {
-    padding: 0;
+    padding: 2% 0;
     text-transform: uppercase;
     text-align: center;
     color: var(--primary-color);
@@ -119,21 +152,23 @@ i:hover {
 
 .tableaux {
     width: 60%;
-}
-
-.tableau {
-    width: 40%;
+    padding: 2%;
+    margin: 0 0 0 3%;
 }
 
 .city {
     padding: 0.1% 10%;
     margin: 3%;
-    width: 50%;
+    width: 70%;
     font-weight: normal;
     font-size: 20px;
     text-align: center;
     text-transform: capitalize;
+    box-shadow: 0 0 3px 0 var(--dark-footer);
 }
+
+
+/*button apply*/
 
 .button {
     align-items: flex-end;
@@ -147,19 +182,40 @@ i:hover {
     background-color: var(--primary-blue);
 }
 
+
+/*contact*/
+
 .require {
     padding-top: 2%;
     display: flex;
+    gap: 4px;
+    justify-content: space-between;
+    margin: 0 0 0 7%;
+}
+
+.flex-col {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1;
+}
+
+.flex-col>* {
+    flex-grow: 1;
 }
 
 .car {
     padding: 2% 0;
     display: flex;
-    width: 30%;
+    width: 50%;
+}
+
+.phone {
+    width: 90%;
 }
 
 .icon-car .fa-solid {
-    margin: 0 0 0 2%;
+    margin: 1% 0 0 2%;
     font-size: 17px;
     color: var(--primary-blue);
 }
@@ -168,6 +224,13 @@ i:hover {
     padding: 0 0 0 6%;
     text-transform: capitalize;
 }
+
+.icone {
+    margin: -1.5% 0 0 5%;
+}
+
+
+/*map*/
 
 .bible {
     margin: 3% 0 0 3%;
@@ -205,6 +268,34 @@ i:hover {
 
 .mapouter {
     margin: 3%;
+}
+
+
+/*media*/
+
+@media screen and (max-width:570px) {
+    .require {
+        display: flex;
+        flex-direction: column;
+    }
+    .flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .icone {
+        margin: -1.5% 0 0 0!important;
+    }
+    .tableaux {
+        width: 90%;
+    }
+    .button {
+        margin: 0 0 0 69%;
+        width: 20%;
+    }
+    iframe {
+        width: 100%;
+        height: 50%;
+    }
 }
 
 
@@ -319,18 +410,18 @@ i:hover {
     color: var(--primary-color);
 }
 
-.links {
-    padding-left: 2%;
-    color: var(---color-white);
-    text-decoration: none;
-}
-
 .sub-footer {
     padding: 0 0 0 5%;
     color: var(---color-white);
     justify-content: space-between;
     display: flex;
     background-color: var(--gray-footer);
+}
+
+.links {
+    padding-left: 2%;
+    color: var(---color-white);
+    text-decoration: none;
 }
 
 .social-icon {
@@ -340,4 +431,23 @@ i:hover {
 
 i {
     color: var(---color-white);
+}
+
+.main-footer>.subscription>a:hover {
+    text-decoration: underline !important;
+}
+
+
+/*media*/
+
+@media screen and (max-width: 570px) {
+    .main-footer {
+        display: none;
+    }
+    .text {
+        font-size: 10px;
+    }
+    .social-icon .fa-brands {
+        padding: 2% 5% 0 0;
+    }
 }

@@ -14,33 +14,49 @@
 <body>
     <!--------------------------------------HEADER----------------------------------------->
     <header>
+        <!-------------------first-section-in-header------------------>
         <div class="logo">
-            <div class="nav">
+            <div class="nav nave">
                 <img src="assets/Images/group-2.svg" width="70" alt="">
                 <a class="event " aria-current="page" href="#">[Event]
                 </a>
             </div>
         </div>
+        <!-------------------second-section-in-header------------------>
         <div class="navbar">
             <ul class="nav navs">
                 <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="#search"><i class="fa-solid fa-magnifying-glass"></i>Search</a>
+                    <a class="nav-link " aria-current="page" href="#search">
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <span class="text-header">Search</span>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html"> <i class="fa-solid fa-user-tie"></i>About</a>
+                    <a class="nav-link" href="about.html">
+                        <span><i class="fa-solid fa-user-tie"></i></span>
+                        <span class="text-header">About</span>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa-solid fa-rss"></i>Blog</a>
+                    <a class="nav-link" href="#">
+                        <span><i class="fa-solid fa-rss"></i></span>
+                        <span class="text-header"> Blog</span>
+                    </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#"><i class="fa-solid fa-bars"></i>More</a>
+                <li class=" nav-item ">
+                    <a class="nav-link " href="# ">
+                        <span><i class="fa-solid fa-bars "></i></span>
+                        <span class="text-header">More</span>
+                    </a>
                 </li>
             </ul>
         </div>
     </header>
     <!----------------------------------main=-----------------==========-->
     <main>
+        <!----------------------------------first-in-main=-----------------==========-->
         <section class="border">
+            <!----------------------------------first-block-----------------==========-->
             <div class="sunny">
                 <h1 class="titre"><i class="fa-solid fa-gear"></i>a sunny beach day</h1>
                 <div class="flex">
@@ -58,12 +74,13 @@
                             <p>subject: <span style="color:#509bdc;">beach time</span></p>
                         </div>
                     </div>
-                    <div class="tableau">
+                    <!----------------------------------second-block-----------------==========-->
+                    <div class="tableaux">
                         <div class="city">
                             <p>host<span style="color:#509bdc;"> host-name</span></p>
                         </div>
                         <div class="city">
-                            <p>date: <span style="color:#509bdc;">21/06/2021</span></p>
+                            <p>date:<span style="color:#509bdc;">21/06/2021</span></p>
                         </div>
                         <div class="city">
                             <p>final-date: <span style="color:#509bdc;">21/06/2021</span></p>
@@ -74,45 +91,53 @@
                         </div>
                     </div>
                 </div>
+                <!----------------------------------button apply-----------------==========-->
 
                 <button type="button" class="button">
                         <span class="button-icon"><i class="fa-solid fa-child"></i></span> 
                         <span class="button-text">apply</span>
                     </button>
-
+                <!---------------------------------contact-----------------==========-->
                 <div class="require">
-                    <div class="car">
-                        <span class="icon-car"><i class="fa-solid fa-phone"></i></span>
-                        <span class="text-car">tel:XXXX-XXXX</span>
+                    <div class="flex-col">
+                        <div class="car phone">
+                            <span class="icon-car"><i class="fa-solid fa-phone"></i></span>
+                            <span class="text-car">tel:XXXX-XXXX</span>
+                        </div>
+                        <div class="car">
+                            <span class="icon-car"><i class="fa-solid fa-user-plus"></i></span>
+                            <span class="text-car">bring+1</span>
+                        </div>
+                        <div class="car">
+                            <span class="icon-car"><i class="fa-solid fa-sun"></i></span>
+                            <span class="text-car">day</span>
+                        </div>
                     </div>
-                    <div class="car">
-                        <span class="icon-car"><i class="fa-solid fa-user-plus"></i></span>
-                        <span class="text-car">bring+1</span>
+                    <div class="flex-col">
+                        <div class="car">
+                            <span class="icon-car"><i class="fa-solid fa-user-shield"></i></span>
+                            <span class="text-car">host verified</span>
+                        </div>
+                        <div class="car">
+                            <span class="icon-car"><i class="fa-solid fa-bus"></i></span>
+                            <span class="text-car">your way</span>
+                        </div>
                     </div>
-                    <div class="car">
-                        <span class="icon-car"><i class="fa-solid fa-sun"></i></span>
-                        <span class="text-car">day</span>
-                    </div>
-                    <div class="car">
-                        <span class="icon-car"><i class="fa-solid fa-user-shield"></i></span>
-                        <span class="text-car">host verified</span>
-                    </div>
-                    <div class="car">
-                        <span class="icon-car"><i class="fa-solid fa-bus"></i></span>
-                        <span class="text-car">your way</span>
-                    </div>
-                    <div class="car">
+
+                    <div class="car icone ">
                         <span class="icon-car"><i class="fa-solid fa-money-bill-1"></i></span>
                         <span class="text-car">not required</span>
                     </div>
                 </div>
             </div>
         </section>
+        <!----------------------------------second-in-main=-----------------==========-->
         <section class="map">
             <div class="bible">
                 <span class="icon-bible"><i class="fa-solid fa-book-bible"></i></span>
                 <span class="text-bible">click to view more details.</span>
             </div>
+            <!----------------------------------map-----------------==========-->
             <div class="direction">
                 <h4 class="little">
                     <span class="icon-little"><i class="fa-solid fa-map"></i></span>
@@ -127,16 +152,14 @@
     </main>
     <!--footer-->
     <footer>
+        <!--first-in-footer-->
         <section class="main-footer">
-
             <div class="location">
                 <a class="icon-link" href="index.html"> Home</a>
                 <a class="icon-link" href="search.html"> Search</a>
                 <a class="icon-link" href="about.html"> About us</a>
                 <a class="icon-link" href="about.html"> Advertise</a>
-                <div class="icon-box">
-
-                </div>
+                <div class="icon-box"></div>
                 <a class="icon-link face" href="index.html"> Facebook</a>
                 <a class="icon-link" href="index.html"> Twitter</a>
                 <a class="icon-link" href="index.html"> Instagram</a>
@@ -144,23 +167,27 @@
             </div>
             <div class="contact">
                 <div class="subscription">
-                    <h2 id="subscribe">subscribe</h2>
+                    <h2 class="subscribe">subscribe</h2>
                     <form class="send">
-                        <input class="form-controle" type="search" placeholder="insert your email here" aria-label="Search">
+                        <input class="form-controle" type="search" placeholder="insert your email here" aria-label="Search" />
                         <button class="b-tn" type="submit">Send</button>
                     </form>
                 </div>
-                <div class=" subscription ">
-                    <h2 id="subscribe">contact</h2>
+                <div class="subscription">
+                    <h2 class="subscribe">contact</h2>
                     <p class="paragraphe">Have a question or sugestion ?</p>
                     <a class="link" href="mailto:contact@events.com">contact@events.com</a>
                 </div>
                 <div class="about subscription">
-                    <h2 id="subscribe">about</h2>
-                    <p class="paragraphe">[Event] is an online plateform that Works to improve and increase social life connection,when this nightmare that we are curently living in is over <span><a class="link" href="#"> learn more</a></span></p>
+                    <h2 class="subscribe">about</h2>
+                    <p class="paragraphe">
+                        [Event] is an online plateform that Works to improve and increase social life connection,when this nightmare that we are curently living in is over
+                        <span><a class="link" href="#"> learn more</a></span>
+                    </p>
                 </div>
             </div>
         </section>
+        <!--second-in-footer-->
         <section class="sub-footer">
             <div class="social-icon">
                 <a class="links" href="index.html"><i class="fa-brands fa-facebook-square"></i></a>

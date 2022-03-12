@@ -34,12 +34,8 @@ main {
     margin: -1.5% 0 0 0;
 }
 
-.event {
-    text-decoration: none;
-    padding: 20% 0 0 30%;
-    color: var(---color-white);
-    font-size: 30px;
-}
+
+/*first-sectionin header*/
 
 .logo {
     display: flex;
@@ -50,13 +46,23 @@ main {
     width: 60%;
 }
 
-.navs {
-    width: 50%;
+.event {
+    text-decoration: none;
+    padding: 20% 0 0 30%;
+    color: var(---color-white);
+    font-size: 30px;
 }
 
+
+/*second-section in header*/
+
 .navbar {
-    width: 40%;
+    width: 50%;
     display: flex;
+}
+
+.navs {
+    width: 60%;
 }
 
 .nav-item {
@@ -76,10 +82,15 @@ main {
     padding: 1% 30% 0 0;
 }
 
+.text-header {
+    margin-left: 60%;
+}
+
 .nav-link>i {
     width: 80%;
     color: #ffffff;
-    padding: 1% 30% 0 0;
+    margin: 0 0 0 2%;
+    padding: 1% 0 0 0;
 }
 
 a:hover,
@@ -88,7 +99,38 @@ i:hover {
 }
 
 
+/*media*/
+
+@media screen and (max-width:570px) {
+    header {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .nave {
+        display: flex;
+    }
+    .text-header {
+        display: none;
+    }
+    .event {
+        font-size: 30px;
+        padding: 20% 0 0 0;
+    }
+    .nav-item {
+        padding: 2% 19% 0 2%;
+    }
+    .nave>img {
+        padding: 15% 0 0 50%;
+        width: 35%;
+    }
+}
+
+
 /*main*/
+
+
+/*first-section-in-main*/
 
 .light {
     padding: 0 0 10% 0;
@@ -149,6 +191,92 @@ i:hover {
     font-size: 12px;
 }
 
+
+/*media-in -first-section*/
+
+@media screen and (max-width:570px) {
+    .light {
+        padding: 0;
+    }
+    .form {
+        width: 50%;
+        padding-bottom: 1%;
+    }
+    #search {
+        padding: 4% 0 0 0;
+        font-size: 14px;
+    }
+    .input {
+        padding: 12% 0;
+        margin-left: 7%;
+        display: flex;
+        flex-direction: column;
+    }
+    .btn {
+        opacity: 1;
+        width: 90%;
+        color: var(---color-white);
+    }
+    .work {
+        width: 20%;
+        margin: 10% 0 0 38%;
+    }
+}
+
+
+/*second-section-in-main*/
+
+.four {
+    padding: 2%;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.col {
+    display: flex;
+    padding: 2%;
+}
+
+.step {
+    display: flex;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.for {
+    width: 50%;
+}
+
+.icon-little i {
+    color: var(--dark-footer);
+}
+
+.go {
+    padding-top: 5%;
+}
+
+.fr {
+    width: 60%;
+    padding: 0 0 0 10%;
+}
+
+.simple {
+    font-size: 14px;
+}
+
+
+/*media*/
+
+@media screen and (max-width:570px) {
+    .steps {
+        display: none;
+    }
+}
+
+
+/*third-section-in-main*/
+
 .events {
     justify-content: space-between;
     display: flex;
@@ -157,12 +285,35 @@ i:hover {
     padding: 0 1% 0 3%;
 }
 
+.mage {
+    padding: 3%;
+    width: 20%;
+}
+
+.find {
+    padding: 1% 1% 1% 2%;
+    width: 15%;
+    background-color: var(---color-white);
+    color: var(--primary-color);
+}
+
 .connect {
     justify-content: space-between;
     display: flex;
     background-color: var(--primary-gray);
     color: var(---color-white);
     padding: 0 1% 0 3%;
+}
+
+.finds {
+    padding: 1% 0 1% 2%;
+    width: 25%;
+    background-color: var(---color-white);
+}
+
+.finds a {
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
 .love {
@@ -177,35 +328,60 @@ p {
     padding: 3% 0;
 }
 
-.mage {
-    padding: 3%;
-    width: 20%;
-}
-
-img {
+.mage>img {
     border-radius: 50%;
 }
 
-.find {
-    padding: 1% 1% 1% 2%;
-    width: 15%;
-    background-color: var(---color-white);
-    color: var(--primary-color);
+.evente,
+.connects,
+.loves {
+    display: none;
 }
 
-.finds {
-    padding: 1% 0 1% 2%;
-    width: 25%;
-    background-color: var(---color-white);
-}
 
-.finds a {
-    text-decoration: none;
-    color: var(--primary-color);
+/*media*/
+
+@media screen and (max-width:570px) {
+    .events,
+    .love,
+    .connect {
+        display: none;
+    }
+    .evente {
+        padding: 1% 10% 12% 20%;
+        color: var(---color-white);
+        background-image: url(../Images/Untitled\ design.png);
+        background-size: cover;
+        display: block;
+    }
+    .connects {
+        padding: 1% 10% 12% 25%;
+        color: var(---color-white);
+        background-image: url(../Images/Untitled\ design\ \(4\).png);
+        background-size: cover;
+        display: block;
+    }
+    .loves {
+        padding: 1% 8% 10% 8%;
+        color: var(---color-white);
+        background-image: url(../Images/Untitled\ design\ \(5\).png);
+        background-size: cover;
+        display: block;
+    }
+    .resize {
+        padding: 15% 0 10% 10%;
+    }
+    .finde {
+        padding: 0 0 5% 0;
+        color: var(--primary-color);
+    }
 }
 
 
 /*footer*/
+
+
+/*first-in -footer*/
 
 .main-footer {
     background-color: var(--dark-footer);
@@ -223,13 +399,18 @@ img {
     position: relative;
 }
 
+.icon-link {
+    font-size: 12px;
+    padding: 2%;
+    color: var(---color-white);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
 .icon-box {
     width: 66px;
     background-color: #000000;
-}
-
-.face {
-    margin-left: 9%;
 }
 
 .icon-box::before {
@@ -265,18 +446,8 @@ img {
     z-index: 1;
 }
 
-.icon-link {
-    font-size: 12px;
-    padding: 2%;
-    color: var(---color-white);
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 5px;
-}
-
-#subscribe {
-    color: var(---color-white);
-    text-transform: capitalize;
+.face {
+    margin-left: 9%;
 }
 
 .contact {
@@ -291,6 +462,11 @@ img {
     width: 30%;
 }
 
+.subscribe {
+    color: var(---color-white);
+    text-transform: capitalize;
+}
+
 .form-controle {
     padding: 1.5%;
     background-color: var(--dark-footer);
@@ -303,10 +479,6 @@ img {
     color: var(---color-white);
 }
 
-.about {
-    width: 50%;
-}
-
 .paragraphe {
     color: var(---color-white);
 }
@@ -316,6 +488,13 @@ img {
     color: var(--primary-color);
 }
 
+.about {
+    width: 50%;
+}
+
+
+/*second-in-footer*/
+
 .sub-footer {
     padding: 0 0 0 5%;
     color: var(---color-white);
@@ -324,15 +503,15 @@ img {
     background-color: var(--gray-footer);
 }
 
+.social-icon {
+    width: 50%;
+    padding: 2% 0 0 0;
+}
+
 .links {
     padding-left: 2%;
     color: var(---color-white);
     text-decoration: none;
-}
-
-.social-icon {
-    width: 50%;
-    padding: 2% 0 0 0;
 }
 
 i {
@@ -341,4 +520,16 @@ i {
 
 .main-footer>.subscription>a:hover {
     text-decoration: underline !important;
+}
+
+@media screen and (max-width: 570px) {
+    .main-footer {
+        display: none;
+    }
+    .text {
+        font-size: 10px;
+    }
+    .social-icon .fa-brands {
+        padding: 2% 5% 0 0;
+    }
 }
